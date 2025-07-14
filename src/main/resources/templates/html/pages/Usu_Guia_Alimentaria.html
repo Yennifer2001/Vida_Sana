@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title alt="Guia Alimentaria">Guia Alimentaria</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/Style_Plantilla.css">
+	<link rel="stylesheet" href="/css/Style_Page.css">
+</head>
+
+<body id="body">
+
+	<!-- Header -->
+	<template th:replace="layout/plantilla :: header_user"></template>
+
+	<!-- Aside -->
+	<template th:replace="layout/plantilla :: aside_user"></template>
+
+	<!-- Main -->
+	<main id="contenedor-principal" class="contenedor-principal">
+
+		<section id="contenedor">
+			<div id="contenedor-div">
+				<h2 class="">GUIA ALIMENTARIA</h2>
+				<hr>
+				<section class="contenedor-div-section" id="contenedor-div-section">
+					<h4>Carbohidratos</h4>
+					<br>
+					<h6>¿Qué son los carbohidratos?</h6>
+					<br>
+					<p>
+						Los carbohidratos son nutrientes que dan energía al cuerpo. Son la principal fuente de
+						combustible para el cerebro y los
+						músculos.
+					</p>
+
+					<dl>
+						<dt>Tipos de carbohidratos:</dt>
+						<dd>
+							<ol>
+								<li>Simples:</li>
+								<p>Se digieren rápido.Dan energía rápida.Ejemplos: azúcar, miel, dulces, frutas.</p>
+								<div id="carouselSimples" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
+									<div class="carousel-indicators">
+										<button type="button" data-bs-target="#carouselSimples" data-bs-slide-to="0"
+											class="active" aria-current="true" aria-label="Slide 1"></button>
+										<button type="button" data-bs-target="#carouselSimples" data-bs-slide-to="1"
+											aria-label="Slide 2"></button>
+										<button type="button" data-bs-target="#carouselSimples" data-bs-slide-to="2"
+											aria-label="Slide 3"></button>
+										<button type="button" data-bs-target="#carouselSimples" data-bs-slide-to="3"
+											aria-label="Slide 4"></button>
+									</div>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img src="/img/pages/guia_alimentaria/azucar_simples.jpg" class="d-block w-100"
+												alt="azúcar">
+											<div class="carousel-caption d-none d-md-block">
+												<h5>azúcar</h5>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img src="/img/pages/guia_alimentaria/miel_simples.jpg" class="d-block w-100"
+												alt="miel">
+											<div class="carousel-caption d-none d-md-block">
+												<h5>miel</h5>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img src="/img/pages/guia_alimentaria/dulces_simples.jpg" class="d-block w-100"
+												alt="miel ">
+											<div class="carousel-caption d-none d-md-block">
+												<h5>dulces</h5>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img src="/img/pages/guia_alimentaria/frutas_simples.jpg" class="d-block w-100"
+												alt="frutas">
+											<div class="carousel-caption d-none d-md-block">
+												<h5>frutas</h5>
+											</div>
+										</div>
+									</div>
+									<button class="carousel-control-prev" type="button"
+										data-bs-target="#carouselSimples" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button"
+										data-bs-target="#carouselSimples" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+								
+								
+								<li>Complejos</li>
+								<p>Se digieren lento. Dan energía por más tiempo. Ejemplos: arroz, pan integral, papa,
+									lentejas.</p>
+								<div id="carouselComplejos" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
+									<div class="carousel-indicators">
+										<button type="button" data-bs-target="#carouselComplejos" data-bs-slide-to="0"
+											class="active" aria-current="true" aria-label="Slide 1"></button>
+										<button type="button" data-bs-target="#carouselComplejos" data-bs-slide-to="1"
+											aria-label="Slide 2"></button>
+										<button type="button" data-bs-target="#carouselComplejos" data-bs-slide-to="2"
+											aria-label="Slide 3"></button>
+										<button type="button" data-bs-target="#carouselComplejos" data-bs-slide-to="3"
+											aria-label="Slide 4"></button>
+									</div>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img src="/img/pages/guia_alimentaria/arroz_complejos.jpg" class="d-block w-100"
+												alt="arroz">
+											<div class="carousel-caption d-none d-md-block">
+												<h5>arroz</h5>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img src="/img/pages/guia_alimentaria/panintegral_complejos.jpg" class="d-block w-100"
+												alt="pan integral">
+											<div class="carousel-caption d-none d-md-block">
+												<h5>pan integral</h5>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img src="/img/pages/guia_alimentaria/papa_complejos.jpg" class="d-block w-100"
+												alt="papa">
+											<div class="carousel-caption d-none d-md-block">
+												<h5>papa</h5>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img src="/img/pages/guia_alimentaria/lentejas_complejos.jpg" class="d-block w-100"
+												alt="lentejas">
+											<div class="carousel-caption d-none d-md-block">
+												<h5>lentejas</h5>
+											</div>
+										</div>
+									</div>
+									<button class="carousel-control-prev" type="button"
+										data-bs-target="#carouselComplejos" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button"
+										data-bs-target="#carouselComplejos" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+							</ol>
+						</dd>
+					</dl>
+
+					<h4>Proteinas</h4>
+					<br>
+					<h6>¿Qué son las proteínas y cuáles son?</h6>
+					<br>
+					<p>
+						Las proteínas ayudan a formar y reparar los músculos, órganos y tejidos. Son esenciales para el
+						crecimiento.
+						Ejemplos de proteínas:
+					</p>
+
+					<div id="carouselProteinas" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselProteinas" data-bs-slide-to="0"
+								class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselProteinas" data-bs-slide-to="1"
+								aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselProteinas" data-bs-slide-to="2"
+								aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#carouselProteinas" data-bs-slide-to="3"
+								aria-label="Slide 4"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="/img/pages/guia_alimentaria/proteinas_1.png" class="d-block w-100"
+									alt="Carne, pollo, pescado">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Carne, pollo, pescado</h5>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="/img/pages/guia_alimentaria/proteinas_2.png" class="d-block w-100"
+									alt="Huevos">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Huevos</h5>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="/img/pages/guia_alimentaria/proteinas_3.png" class="d-block w-100"
+									alt="Lácteos">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>(leche, queso, yogur) </h5>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="/img/pages/guia_alimentaria/proteinas_4.png" class="d-block w-100"
+									alt="Nueces">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>nueces</h5>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselProteinas"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselProteinas"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+
+					<h4>Verduras</h4>
+					<br>
+					<h6>¿Qué son las verduras y cuáles son?</h6>
+					<br>
+					<p>
+						Las verduras son alimentos de origen vegetal ricos en vitaminas, minerales y fibra. Ayudan a
+						mantener el cuerpo sano.
+						Ejemplos de verduras:
+					</p>
+
+
+					<div id="carouselVerduras" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselVerduras" data-bs-slide-to="0" class="active"
+								aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselVerduras" data-bs-slide-to="1"
+								aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselVerduras" data-bs-slide-to="2"
+								aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#carouselVerduras" data-bs-slide-to="3"
+								aria-label="Slide 4"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="/img/pages/guia_alimentaria/verduras_1.png" class="d-block w-100"
+									alt="Espinaca, lechuga, tomate">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Espinaca, lechuga, tomate</h5>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="/img/pages/guia_alimentaria/verduras_2.png" class="d-block w-100"
+									alt="Zanahoria, brócoli, coliflor">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Zanahoria, brócoli, coliflor</h5>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="/img/pages/guia_alimentaria/verduras_3.png" class="d-block w-100"
+									alt="Tomate, pepino, cebolla ">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Tomate, pepino, cebolla </h5>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="/img/pages/guia_alimentaria/verduras_4.png" class="d-block w-100"
+									alt="Pimentón, remolacha, calabacín">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Pimentón, remolacha, calabacín</h5>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselVerduras"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselVerduras"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+
+					<h4>Grasas Saludables</h4>
+					<br>
+					<h6>¿Qué son las grasas saludables y cuáles son?</h6>
+					<br>
+					<p>
+						Son tipos de grasa que benefician al corazón y al cerebro. Ayudan a absorber vitaminas y dan
+						energía.
+						Ejemplos de grasas saludables:
+					</p>
+
+					<div id="carouselGrasas" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselGrasas" data-bs-slide-to="0" class="active"
+								aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselGrasas" data-bs-slide-to="1"
+								aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselGrasas" data-bs-slide-to="2"
+								aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#carouselGrasas" data-bs-slide-to="3"
+								aria-label="Slide 4"></button>
+							<button type="button" data-bs-target="#carouselGrasas" data-bs-slide-to="4"
+								aria-label="Slide 5"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="/img/pages/guia_alimentaria/grasas_saludables_1.png" class="d-block w-100"
+									alt="Aguacate">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Aguacate</h5>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="/img/pages/guia_alimentaria/grasas_saludables_2.png" class="d-block w-100"
+									alt="Aceite de oliva o coco">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Aceite de oliva o coco</h5>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="/img/pages/guia_alimentaria/grasas_saludables_3.png" class="d-block w-100"
+									alt="Frutos secos (nueces, almendras)">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Frutos secos (nueces, almendras) </h5>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="/img/pages/guia_alimentaria/grasas_saludables_4.png" class="d-block w-100"
+									alt="Semillas (chía, linaza)">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Semillas (chía, linaza)</h5>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="/img/pages/guia_alimentaria/grasas_saludables_5.png" class="d-block w-100"
+									alt="Pescados grasos (salmón, atún)">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Pescados grasos (salmón, atún)</h5>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselGrasas"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselGrasas"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+
+				</section>
+				<hr>
+			</div>
+
+		</section>
+	</main>
+
+	<template th:replace="layout/plantilla :: footer"></template>
+
+	<script type="text/javascript" src="/js/popper.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="/js/menu.js"></script>
+</body>
+
+</html>
