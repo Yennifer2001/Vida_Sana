@@ -4,9 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title alt="Guia Alimentaria">Guia Alimentaria</title>
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/css/Style_Plantilla.css">
-	<link rel="stylesheet" href="/css/Style_Page.css">
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+	<link rel="stylesheet" th:href="@{/css/Style_Plantilla.css}">
+	<link rel="stylesheet" th:href="@{/css/Style_Page.css}">
 </head>
 
 <body id="body">
@@ -171,12 +171,12 @@
 
 	<template th:replace="layout/plantilla :: footer"></template>
 
-	<script type="text/javascript" src="/js/popper.min.js"></script>
-	<script type="text/javascript" src="/js/jquery.js"></script>
-	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
-	<script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
-	<script type="text/javascript" src="/js/menu.js"></script>
+	<script type="text/javascript" th:src="@{/js/popper.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.bundle.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.bundle.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/menu.js}"></script>
 </body>
 
 </html>

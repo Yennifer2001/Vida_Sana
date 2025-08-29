@@ -4,13 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title alt="Sistema Administrador Gestionar Registros">Sistema Gestionar Registro</title>
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/css/Style_Plantilla.css">
-	<link rel="stylesheet" href="/css/Style_Sis_Prin.css">
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/Style_Plantilla.css}">
+    <link rel="stylesheet" th:href="@{/css/Style_Sis_Prin.css}">
 
-	<!-- CSS Tabla -->
-	<link rel="stylesheet" href="/css/bootstrap.table.css">
-	<!-- CSS Tabla -->
+    <!-- CSS Tabla -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.table.css}">
+    <!-- CSS Tabla -->
 
 </head>
 
@@ -75,13 +75,12 @@
 										</button>
 										<ul class="dropdown-menu dropdown-menu-dark"
 											aria-labelledby="dropdownMenuButton2">
-											<li><button type="button" class="dropdown-item text-center"
-													th:attr="onclick=|aceptarSolicitud('${solicitud.getId_solicitud()}')|">Aceptar</button>
+											<li><a class="dropdown-item text-center"
+													th:href="@{/aceptarSolicitud/} + ${solicitud.getId_solicitud()}">Aceptar</a>
 											</li>
-											<li><button type="button" class="dropdown-item text-center"
-													th:attr="onclick=|rechazarSolicitud('${solicitud.getId_solicitud()}','${solicitud.getFoto()}')|"
-													th:id_solicitud="${solicitud.getId_solicitud()}"
-													th:url="${solicitud.getFoto()}">Rechazar</button></li>
+											<li><a type="button" class="dropdown-item text-center"
+													th:href="@{/rechazarSolicitud/} + ${solicitud.getId_solicitud()}">Rechazar</a>
+											</li>
 										</ul>
 
 									</div>
@@ -100,23 +99,23 @@
 	<template th:replace="layout/plantilla :: footer"></template>
 
 
-	<script type="text/javascript" src="/js/popper.min.js"></script>
-	<script type="text/javascript" src="/js/jquery.js"></script>
-	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
-	<script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
-	<script type="text/javascript" src="/js/menu.js"></script>
+	<script type="text/javascript" th:src="@{/js/popper.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.bundle.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.bundle.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/menu.js}"></script>
 
-	<!-- JS Tabla -->
-	<script type="text/javascript" src="/js/jquery.datatable.js"></script>
-	<script type="text/javascript" src="/js/bootstrap.table.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$('#example').DataTable();
-		});
-	</script>
-	<!-- JS Tabla -->
-	<script type="text/javascript" src="/js/validaciones.js"></script>
+    <!-- JS Tabla -->
+    <script type="text/javascript" th:src="@{/js/jquery.datatable.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.table.js}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#tabla-pedido').DataTable();
+        });
+    </script>
+    <!-- JS Tabla -->
+	<script type="text/javascript" th:src="@{/js/validaciones.js}"></script>
 </body>
 
 </html>

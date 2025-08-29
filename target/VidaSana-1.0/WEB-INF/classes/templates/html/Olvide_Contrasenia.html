@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title alt="Iniciar Sesión">Recuperar Contraseña</title>
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/Style_Olvide_Contra.css">
+  <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+  <link rel="stylesheet" th:href="@{/css/Style_Olvide_Contra.css}">
 
 </head>
 
@@ -14,7 +14,7 @@
   <section class="contenedor-principal">
     <h3>RECUPERAR CONTRASEÑA</h3>
     <form class="formulario" method="post" th:action="@{/}" name="formulario">
-      <img src="/img/padlock.png" alt="">
+      <img th:src="@{/img/padlock.png}" alt="">
       <div class="contenedor-div">
         <label for="email" class="">Ingresa el Correo:</label>
         <div class="contenedor-email">
@@ -29,12 +29,13 @@
     </form>
   </section>
 
-  <script type="text/javascript" src="/js/popper.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.js"></script>
-  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
-  <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="/js/validaciones.js"></script>
+  <script type="text/javascript" th:src="@{/js/popper.min.js}"></script>
+  <script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+  <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+  <script type="text/javascript" th:src="@{/js/bootstrap.bundle.js}"></script>
+  <script type="text/javascript" th:src="@{/js/bootstrap.bundle.min.js}"></script>
+  <script type="text/javascript" th:src="@{/js/menu.js}"></script>
+  <script type="text/javascript" th:src="@{/js/validaciones.js}"></script>
 </body>
 
 </html>

@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title alt="Iniciar Sesión">Iniciar Sesión</title>
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/Style_Login.css">
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+        <link rel="stylesheet" th:href="@{/css/Style_Login.css}">
     </head>
 
     <body>
@@ -24,7 +24,8 @@
                     <div class="contenedor-password">
                         <input type="password" id="password" name="password">
                         <div class="figure-password">
-                            <img id="password-eye" onclick="verContraseña()" src="/img/icons/eye-slash-regular.svg" alt="ver contraseña" height="15px">
+                            <img id="view-password-eye" onclick="verContraseña()" th:src="@{/img/icons/eye-regular.svg}" alt="ver contraseña" height="15px" style="display: inline;">
+							<img id="hidde-password-eye" onclick="verContraseña()" th:src="@{/img/icons/eye-slash-regular.svg}" alt="ocultar contraseña" height="15px" style="display: none;">                      
                         </div>
                     </div>
                 </div>
@@ -36,12 +37,11 @@
             </form>
         </section>
 
-        <script type="text/javascript" src="/js/popper.min.js"></script>
-        <script type="text/javascript" src="/js/jquery.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="/js/validaciones.js"></script>
+        <script th:src="@{/js/popper.min.js}"></script>
+		<script th:src="@{/js/jquery.js}"></script>
+		<script th:src="@{/js/bootstrap.min.js}"></script>
+		<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+		<script th:src="@{/js/validaciones.js}"></script>
     </body>
 
 </html>

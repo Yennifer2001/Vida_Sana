@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title alt="Registrar Usuario">Registrar Usuario</title>
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/Style_Registrar_User.css">
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+        <link rel="stylesheet" th:href="@{/css/Style_Registrar_User.css}">
 
     <body>
         <section class="contenedor-principal">
@@ -35,7 +35,8 @@
                     <div class="contenedor-password">
                         <input type="password" class=" input" id="password" th:field="*{password}" required>
                         <div class="figure-password">
-                            <img id="password-eye" onclick="verContraseña()" src="/img/icons/eye-slash-regular.svg" alt="ver contraseña" height="15px">
+                            <img id="view-password-eye" onclick="verContraseña()" th:src="@{/img/icons/eye-regular.svg}" alt="ver contraseña" height="15px" style="display: inline;">
+							<img id="hidde-password-eye" onclick="verContraseña()" th:src="@{/img/icons/eye-slash-regular.svg}" alt="ocultar contraseña" height="15px" style="display: none;">  	
                         </div>
                     </div>
                 </div>
@@ -59,15 +60,16 @@
                     <a th:href="@{/}" class="link-primary">Iniciar Sesión</a>
                     <a th:href="@{/Olvide_Contrasenia}" class="link-primary">Olvidé mi contraseña</a>
                 </div>
-                <button type="button" onclick="registrarAction()">REGISTRARSE</button>
+                <button type="submit" >REGISTRARSE</button>
             </form>
         </section>
 
-        <script type="text/javascript" src="/js/popper.min.js"></script>
-        <script type="text/javascript" src="/js/jquery.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="/js/validaciones.js"></script>
+        <script type="text/javascript" th:src="@{/js/popper.min.js}"></script>
+		<script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+		<script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+		<script type="text/javascript" th:src="@{/js/bootstrap.bundle.js}"></script>
+		<script type="text/javascript" th:src="@{/js/bootstrap.bundle.min.js}"></script>
+		<script type="text/javascript" th:src="@{/js/menu.js}"></script>
+		<script type="text/javascript" th:src="@{/js/validaciones.js}"></script>
     </body>
 </html>

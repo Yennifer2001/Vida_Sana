@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title alt="Registrar Niños">Registrar Niños</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/Style_Plantilla.css">
-    <link rel="stylesheet" href="/css/Style_Sis_Prin.css">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/Style_Plantilla.css}">
+    <link rel="stylesheet" th:href="@{/css/Style_Sis_Prin.css}">
 
     <!-- CSS Tabla -->
-    <link rel="stylesheet" href="/css/bootstrap.table.css">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.table.css}">
     <!-- CSS Tabla -->
 </head>
 
@@ -97,16 +97,16 @@
 
     <template th:replace="layout/plantilla :: footer"></template>
 
-    <script type="text/javascript" src="/js/popper.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" th:src="@{/js/popper.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.bundle.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.bundle.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/menu.js}"></script>
 
     <!-- JS Tabla -->
-    <script type="text/javascript" src="/js/jquery.datatable.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.table.js"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.datatable.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.table.js}"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#tabla-pedido').DataTable();

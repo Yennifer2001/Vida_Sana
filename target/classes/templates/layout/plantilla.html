@@ -13,7 +13,7 @@
             <span class="nav-span1 col-4">
                 <h3 class="texto-nav" id="texto-nav" data-desktoptext="VIDA SANA" data-tablettext="VIDA SANA"
                     data-phonetext="VD"></h3>
-                <figure class="nav-menu-button my-auto"><img onclick="menu()" id="btn_open" src="/img/icons/menu.svg"
+                <figure class="nav-menu-button my-auto"><img onclick="menu()" id="btn_open" th:src="@{/img/icons/menu.svg}"
                         alt="menu" height="30px" class="menu-button">
                 </figure>
             </span>
@@ -22,7 +22,7 @@
                 <div class="dropdown">
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        <figure class="nav-figure"><img class="nav_user_img" id="img_nav" src="/img/icons/user-icon.svg"
+                        <figure class="nav-figure"><img class="nav_user_img" id="img_nav" th:src="@{/img/icons/user-icon.svg}"
                                 alt="user"></figure>
                         <p th:text="${usuario.getNombre()}+' '+${usuario.getApellido()}">USER</p>
                     </button>
@@ -54,7 +54,7 @@
         <div class=" menu-div" id="menu-div">
             <div>
                 <figure class="menu-figure mx-auto" id="menu-figure"><img class="user-aside_img" id="img_menu"
-                        src="/img/icons/user-icon.svg" alt="user-Aside"></figure>
+                        th:src="@{/img/icons/user-icon.svg}" alt="user-Aside"></figure>
             </div>
             <div id="menu_info">
                 <h4 class="menu-text-user" th:value="${usuario.getNombre()}+' '+${usuario.getApellido()}"></h4>
@@ -65,27 +65,27 @@
             <hr>
             <ul class="list-unstyled components menu-ul">
                 <li class="menu-li">
-                    <img src="/img/icons/home-menu.svg" alt="home" height="30px" title="INICIO">
+                    <img th:src="@{/img/icons/home-menu.svg}" alt="home" height="30px" title="INICIO">
                     <a th:href="@{/Sis_Administrador_Prin}" class="d-block menu-a" id="menu-a" aria-hidden="true"
                         value="INICIO"></a>
                 </li>
                 <li class="menu-li">
-                    <img src="/img/icons/planes.svg" alt="home" height="30px" title="PLANES ALIMENTARIOS">
+                    <img th:src="@{/img/icons/planes.svg}" alt="home" height="30px" title="PLANES ALIMENTARIOS">
                     <a th:href="@{/Sis_Administrador_Planes}" class="d-block menu-a" id="menu-a" aria-hidden="true"
                         value="PLANES ALIMENTARIOS"></a>
                 </li>
                 <li class="menu-li">
-                    <img src="/img/icons/actividades.svg" alt="home" height="30px" title="ACTIVIDADES FISICAS">
+                    <img th:src="@{/img/icons/actividades.svg}" alt="home" height="30px" title="ACTIVIDADES FISICAS">
                     <a th:href="@{/Sis_Administrador_Actividades}" class="d-block menu-a" id="menu-a" aria-hidden="true"
                         value="ACTIVIDADES FISICAS"></a>
                 </li>
                 <li class="menu-li">
-                    <img src="/img/icons/add-user.svg" alt="home" height="30px" title="GESTIONAR REGISTROS DE USUARIO">
+                    <img th:src="@{/img/icons/add-user.svg}" alt="home" height="30px" title="GESTIONAR REGISTROS DE USUARIO">
                     <a th:href="@{/Sis_Administrador_GesReg}" class="d-block menu-a" id="menu-a" aria-hidden="true"
                         value="GESTIONAR REGISTROS"></a>
                 </li>
                 <li class="menu-li">
-                    <img src="/img/icons/gestion-user.svg" alt="home" height="30px" title="GESTIONAR USUARIOS">
+                    <img th:src="@{/img/icons/gestion-user.svg}" alt="home" height="30px" title="GESTIONAR USUARIOS">
                     <a th:href="@{/Sis_Administrador_GesUs}" class="d-block menu-a" id="menu-a" aria-hidden="true"
                         value="GESTIONAR USUARIOS"></a>
                 </li>
@@ -99,7 +99,7 @@
             <span class="nav-span1 col-4">
                 <h3 class="texto-nav" id="texto-nav" data-desktoptext="VIDA SANA" data-tablettext="VIDA SANA"
                     data-phonetext="VD"></h3>
-                <figure class="nav-menu-button my-auto"><img onclick="menu()" id="btn_open" src="/img/icons/menu.svg"
+                <figure class="nav-menu-button my-auto"><img onclick="menu()" id="btn_open" th:src="@{/img/icons/menu.svg}"
                         alt="menu" height="30px" class="menu-button">
                 </figure>
             </span>
@@ -108,7 +108,7 @@
                 <div class="dropdown">
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        <figure class="nav-figure"><img class="nav_user_img" id="img_nav" src="/img/icons/user-icon.svg"
+                        <figure class="nav-figure"><img class="nav_user_img" id="img_nav" th:src="@{/img/icons/user-icon.svg}"
                                 alt="user"></figure>
                         <p th:text="${usuario.getNombre()}+' '+${usuario.getApellido()}">USER</p>
                     </button>
@@ -140,7 +140,7 @@
         <div class=" menu-div" id="menu-div">
             <div>
                 <figure class="menu-figure mx-auto" id="menu-figure"><img class="user-aside_img" id="img_menu"
-                        src="/img/icons/user-icon.svg" alt="user-Aside"></figure>
+                        th:src="@{/img/icons/user-icon.svg}" alt="user-Aside"></figure>
             </div>
             <div id="menu_info">
                 <h4 class="menu-text-user" th:value="${usuario.getNombre()}+' '+${usuario.getApellido()}"></h4>
@@ -151,27 +151,27 @@
             <hr>
             <ul class="list-unstyled components menu-ul">
                 <li class="menu-li">
-                    <img src="/img/icons/home-menu.svg" alt="home" height="30px" title="INICIO">
+                    <img th:src="@{/img/icons/home-menu.svg}" alt="home" height="30px" title="INICIO">
                     <a th:href="@{/Sis_Usuario_Prin}" class="d-block menu-a" id="menu-a" aria-hidden="true"
                         value="INICIO"></a>
                 </li>
                 <li class="menu-li">
-                    <img src="/img/icons/guia_alimentaria.svg" alt="home" height="30px" title="GUIA ALIMENTARIA">
+                    <img th:src="@{/img/icons/guia_alimentaria.svg}" alt="home" height="30px" title="GUIA ALIMENTARIA">
                     <a th:href="@{/Usu_Guia_Alimentaria}" class="d-block menu-a" id="menu-a" aria-hidden="true"
                         value="GUIA ALIMENTARIA"></a>
                 </li>
                 <li class="menu-li">
-                    <img src="/img/icons/etiquetas.svg" alt="home" height="30px" title="GUIA ETIQUETAS">
+                    <img th:src="@{/img/icons/etiquetas.svg}" alt="home" height="30px" title="GUIA ETIQUETAS">
                     <a th:href="@{/Usu_Guia_Etiquetas}" class="d-block menu-a" id="menu-a" aria-hidden="true"
                         value="GUIA ETIQUETAS"></a>
                 </li>
                 <li class="menu-li">
-                    <img src="/img/icons/cambio_habitos.svg" alt="home" height="30px" title="CAMBIO DE HABITOS">
+                    <img th:src="@{/img/icons/cambio_habitos.svg}" alt="home" height="30px" title="CAMBIO DE HABITOS">
                     <a th:href="@{/Usu_Cambio_Habitos}" class="d-block menu-a" id="menu-a" aria-hidden="true"
                         value="CAMBIO DE HABITOS"></a>
                 </li>
                 <li class="menu-li">
-                    <img src="/img/icons/personas.svg" alt="home" height="35px" title="NIÑOS">
+                    <img th:src="@{/img/icons/personas.svg}" alt="home" height="35px" title="NIÑOS">
                     <a th:href="@{/Sis_Usuario_Personas}" class="d-block menu-a" id="menu-a" aria-hidden="true"
                         value="NIÑOS(AS)"></a>
                 </li>

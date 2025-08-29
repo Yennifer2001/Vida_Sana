@@ -1,22 +1,21 @@
 
 function verContraseña() {
-    let password = document.getElementById("password");
-    let c_password;
-    if (document.title == "Registrar Usuario" || document.title == "Editar Usuario") {
-        c_password = document.getElementById("c-password");
-    }
-    let eye = document.getElementById("password-eye");
-    if (password.type == "password") {
-        eye.setAttribute("src", "/img/icons/eye-regular.svg");
-        password.setAttribute("type", "text");
-        if (password !== undefined) {
-            c_password.setAttribute("type", "text");
-        }
-    } else {
-        eye.setAttribute("src", "/img/icons/eye-slash-regular.svg");
-        password.setAttribute("type", "password");
-        c_password.setAttribute("type", "password");
-    }
+	const viewEye = document.getElementById("view-password-eye");
+	const hiddeEye = document.getElementById("hidde-password-eye");
+	const password = document.getElementById("password");
+	const c_password = document.getElementById("c_password");
+
+	if (password.type === "password") {
+		password.type = "text";
+		if (c_password) c_password.type = "text";
+		viewEye.style.display = "none";
+		hiddeEye.style.display = "inline";
+	} else {
+		password.type = "password";
+		if (c_password) c_password.type = "password";
+		viewEye.style.display = "inline";
+		hiddeEye.style.display = "none";
+	}
 }
 
 function modificarAction() {
@@ -39,7 +38,7 @@ function registrarAction() {
         if (verificarUsername(inputs[2].value)) {
             if (verificarContraseñas(inputs)) {
                 alert("Solicitud de registro enviada...");
-                document.formulario.submit();
+                document.getElementById("form_registrar").submit();
             }
         } else {
             alert("El usuario no es correo valido.");
@@ -47,25 +46,6 @@ function registrarAction() {
     } else {
         alert("Por favor, complete todos los campos.");
     }
-}
-
-function deleteUsuario(id){
-    const id_usuario = id;
-    document.location.href = "/eliminarUsuario/" + id_usuario;
-}
-
-function modificarUsuario(id) {
-    const id_usuario = id;
-    document.location.href = "/modificarUsuario/" + id_usuario;
-}
-
-function rechazarSolicitud(id, url) {
-    eliminarSolicitud(id, url);
-}
-
-function aceptarSolicitud(id) {
-    const id_solicitud = id;
-    document.location.href = "/aceptarSolicitud/" + id_solicitud;
 }
 
 function verificarUsername(username) {
